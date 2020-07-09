@@ -1,9 +1,10 @@
 package com.contoso;
 
 import java.util.ArrayList;
+import java.util.concurrent.*;
 import java.util.function.IntConsumer;
 
-interface Utils {
+public interface Utils {
 
     static void runIn8ThreadsAndWaitUntilDone(Runnable r) {
         ArrayList<Thread> threads = new ArrayList<>();
@@ -44,5 +45,11 @@ interface Utils {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    static ThreadPoolExecutor newSingleThreadExecutor() {
+        return new ThreadPoolExecutor(1, 1,
+                0, TimeUnit.MILLISECONDS,
+                new LinkedTransferQueue<>());
     }
 }

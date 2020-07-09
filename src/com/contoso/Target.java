@@ -1,6 +1,6 @@
 package com.contoso;
 
-@interface Target {
+public @interface Target {
 
     Class<?>[] value();
 }

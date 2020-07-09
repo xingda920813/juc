@@ -17,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,28 +58,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CoroutineEquivalent">
-    <configuration name="AtomicIntegerTest.rawInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HelloJava" />
-      <option name="PACKAGE_NAME" value="com.contoso" />
-      <option name="MAIN_CLASS_NAME" value="com.contoso.AtomicIntegerTest" />
-      <option name="METHOD_NAME" value="rawInt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConcurrentCollectionsTest.hashMap_infiniteLoop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HelloJava" />
-      <option name="PACKAGE_NAME" value="com.contoso" />
-      <option name="MAIN_CLASS_NAME" value="com.contoso.ConcurrentCollectionsTest" />
-      <option name="METHOD_NAME" value="hashMap_infiniteLoop" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ExecutorsTest.taskPostedBeforeShutdown">
     <configuration name="CoroutineEquivalent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HelloJava" />
       <option name="PACKAGE_NAME" value="com.contoso" />
@@ -90,10 +69,10 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoroutineEquivalent.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExecutorsTest.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HelloJava" />
-      <option name="PACKAGE_NAME" value="com.contoso" />
-      <option name="MAIN_CLASS_NAME" value="com.contoso.CoroutineEquivalent" />
+      <option name="PACKAGE_NAME" value="com.contoso.executor" />
+      <option name="MAIN_CLASS_NAME" value="com.contoso.executor.ExecutorsTest" />
       <option name="METHOD_NAME" value="foo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -101,11 +80,33 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemaphoreTest.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExecutorsTest.shutdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HelloJava" />
-      <option name="PACKAGE_NAME" value="com.contoso" />
-      <option name="MAIN_CLASS_NAME" value="com.contoso.SemaphoreTest" />
-      <option name="METHOD_NAME" value="foo" />
+      <option name="PACKAGE_NAME" value="com.contoso.executor" />
+      <option name="MAIN_CLASS_NAME" value="com.contoso.executor.ExecutorsTest" />
+      <option name="METHOD_NAME" value="shutdown" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecutorsTest.taskPostedAfterShutdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HelloJava" />
+      <option name="PACKAGE_NAME" value="com.contoso.executor" />
+      <option name="MAIN_CLASS_NAME" value="com.contoso.executor.ExecutorsTest" />
+      <option name="METHOD_NAME" value="taskPostedAfterShutdown" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecutorsTest.taskPostedBeforeShutdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HelloJava" />
+      <option name="PACKAGE_NAME" value="com.contoso.executor" />
+      <option name="MAIN_CLASS_NAME" value="com.contoso.executor.ExecutorsTest" />
+      <option name="METHOD_NAME" value="taskPostedBeforeShutdown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExecutorsTest.taskPostedBeforeShutdown" />
+        <item itemvalue="JUnit.ExecutorsTest.taskPostedAfterShutdown" />
+        <item itemvalue="JUnit.ExecutorsTest.foo" />
+        <item itemvalue="JUnit.ExecutorsTest.shutdown" />
         <item itemvalue="JUnit.CoroutineEquivalent" />
-        <item itemvalue="JUnit.ConcurrentCollectionsTest.hashMap_infiniteLoop" />
-        <item itemvalue="JUnit.CoroutineEquivalent.foo" />
-        <item itemvalue="JUnit.AtomicIntegerTest.rawInt" />
-        <item itemvalue="JUnit.SemaphoreTest.foo" />
       </list>
     </recent_temporary>
   </component>
@@ -187,46 +188,46 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1049" y="585" width="462" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1593591775347" />
-    <state width="2517" height="394" key="GridCell.Tab.0.bottom" timestamp="1593884970574">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="2518" height="368" key="GridCell.Tab.0.bottom" timestamp="1594293201880">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2560" height="405" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1593772138527">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2560" height="405" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1593772138527" />
     <state width="2517" height="394" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1593884970574" />
-    <state width="1638" height="274" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1587975812762" />
-    <state width="2518" height="371" key="GridCell.Tab.0.bottom/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1593775241045" />
-    <state width="2517" height="394" key="GridCell.Tab.0.center" timestamp="1593884970574">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="243" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1594285454213" />
+    <state width="2518" height="368" key="GridCell.Tab.0.bottom/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1594293201880" />
+    <state width="2518" height="368" key="GridCell.Tab.0.center" timestamp="1594293201879">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2560" height="405" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1593772138525">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2560" height="405" key="GridCell.Tab.0.center.inPresentationMode/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1593772138525" />
     <state width="2517" height="394" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1593884970574" />
-    <state width="1638" height="274" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1587975812761" />
-    <state width="2518" height="371" key="GridCell.Tab.0.center/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1593775241044" />
-    <state width="2517" height="394" key="GridCell.Tab.0.left" timestamp="1593884970574">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="243" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1594285454212" />
+    <state width="2518" height="368" key="GridCell.Tab.0.center/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1594293201879" />
+    <state width="2518" height="368" key="GridCell.Tab.0.left" timestamp="1594293201879">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2560" height="405" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1593772138524">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2560" height="405" key="GridCell.Tab.0.left.inPresentationMode/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1593772138524" />
     <state width="2517" height="394" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1593884970574" />
-    <state width="1638" height="274" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1587975812760" />
-    <state width="2518" height="371" key="GridCell.Tab.0.left/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1593775241043" />
-    <state width="2517" height="394" key="GridCell.Tab.0.right" timestamp="1593884970574">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="243" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1594285454212" />
+    <state width="2518" height="368" key="GridCell.Tab.0.left/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1594293201879" />
+    <state width="2518" height="368" key="GridCell.Tab.0.right" timestamp="1594293201880">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2560" height="405" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1593772138526">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2560" height="405" key="GridCell.Tab.0.right.inPresentationMode/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1593772138526" />
     <state width="2517" height="394" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1593884970574" />
-    <state width="1638" height="274" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1587975812761" />
-    <state width="2518" height="371" key="GridCell.Tab.0.right/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1593775241045" />
+    <state width="1638" height="243" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1594285454213" />
+    <state width="2518" height="368" key="GridCell.Tab.0.right/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1594293201880" />
     <state width="2517" height="484" key="GridCell.Tab.1.bottom" timestamp="1593884845826">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -269,14 +270,16 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="988" y="430" width="584" height="522" key="find.popup/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1593670814193" />
-    <state width="636" height="202" key="javadoc.popup.new" timestamp="1593884756401">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="418" height="137" key="javadoc.popup.new" timestamp="1594284898305">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="636" height="202" key="javadoc.popup.new/0.0.2560.1400@0.0.2560.1400" timestamp="1593884756401" />
-    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1593667925750">
+    <state width="418" height="137" key="javadoc.popup.new/0.23.1680.947@0.23.1680.947" timestamp="1594284898305" />
+    <state width="636" height="193" key="javadoc.popup.new/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1594283114829" />
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1594284058158">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="620" y="239" width="670" height="479" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1587969576175" />
-    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1593667925750" />
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337/2560.23.1680.1027@0.23.2560.1337" timestamp="1594284058158" />
   </component>
 </project>
